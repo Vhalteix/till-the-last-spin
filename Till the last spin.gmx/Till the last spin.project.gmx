@@ -14,6 +14,10 @@
   <sprites name="sprites">
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\spr_arrow_outline</sprite>
+    <sprite>sprites\spr_cracks</sprite>
+    <sprite>sprites\spr_dance</sprite>
+    <sprite>sprites\spr_bed</sprite>
+    <sprite>sprites\spr_doctor</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -46,6 +50,11 @@
     <objects name="Palettes">
       <object>objects\obj_palette_default</object>
       <object>objects\obj_palette_denial</object>
+    </objects>
+    <objects name="Sprite Objects">
+      <object>objects\obj_bed</object>
+      <object>objects\obj_dancer</object>
+      <object>objects\obj_stheto</object>
     </objects>
   </objects>
   <rooms name="rooms">

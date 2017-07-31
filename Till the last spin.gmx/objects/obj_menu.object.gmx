@@ -37,6 +37,7 @@ mpos = 0;
 
 //used for shaking screen after
 global.lastshake = -1;
+global.miss = 0;
 </string>
           </argument>
         </arguments>

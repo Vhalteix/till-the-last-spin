@@ -26,7 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>///init
-beatmap = "b___bbb___bbb___bbb_b_b_b_b_b___b_b_b_b_b_______b___bbb___bbb___bbb_b_b_b_b_b___b_b_b_b_b_______b___b_b_b_b_b___b_b___bbb___bbb___bbb_b_b_b_____b___b_b_b_b_b___b_b___bbb___bbb___bbb_b_b_b_____b___bbb___bbb___bbb_b_b_b_b_b___b_b_b_b_b_______b___bbb___bbb___bbb_b_b_b_b_b___b_b_b_b_b_______";
+
+//beatmap = "b___bbb___bbb___bbb_b_b_b_b_b___b_b_b_b_b_______b___bbb___bbb___bbb_b_b_b_b_b___b_b_b_b_b_______b___b_b_b_b_b___b_b___bbb___bbb___bbb_b_b_b_____b___b_b_b_b_b___b_b___bbb___bbb___bbb_b_b_b_____b___bbb___bbb___bbb_b_b_b_b_b___b_b_b_b_b_______b___bbb___bbb___bbb_b_b_b_b_b___b_b_b_b_b_______";
+
+beatmap = "bbb___bbb_b_b_b_b_b___b_b_b_b_b_______b___bbb___bbb___bbb_b_b_b_b_b___b_b_b_b_b_______b___b_b_b_b_b___b_b___bbb___bbb___bbb_b_b_b_____b___b_b_b_b_b___b_b___bbb___bbb___bbb_b_b_b_____b___bbb___bbb___bbb_b_b_b_b_b___b_b_b_b_b_______b___bbb___bbb___bbb_b_b_b_b_b___b_b_b_b_b_______";
+
 bpm = 180;
 crotchet = 60 / (bpm*2); // The beatmap is cut in 8th, so half a crotchet
 lastbeat = 0;
@@ -34,7 +38,7 @@ song = snd_denial;
 char = 0;
 before = true;
 global.over = false;
-alarm[0] = 88;
+alarm[0] = 90;
 cmpt = 0;
 </string>
           </argument>
@@ -82,7 +86,7 @@ before = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if((!global.over &amp;&amp; audio_sound_get_track_position(song) &gt; lastbeat + crotchet) || (before &amp;&amp; cmpt%10 == 0)) {
+            <string>if((!global.over &amp;&amp; audio_sound_get_track_position(song) &gt; lastbeat + crotchet) /*|| (before &amp;&amp; cmpt%10 == 0)*/) {
     lastbeat += crotchet;
     if(char &lt; string_length(beatmap)) {
         var b = string_char_at(beatmap, char);
@@ -92,7 +96,7 @@ before = false;
             arrow_create_moving(track);
         }
     }
-    if(alarm_get(0) &gt; 0) cmpt++;
+    /*if(alarm_get(0) &gt; 0) cmpt++;*/
 }
 
 if(!audio_is_playing(song) &amp;&amp; !before) global.over = true;

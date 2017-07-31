@@ -72,8 +72,12 @@ madam8[5] = "The next nights are gonna be interesting.";
 
 narrator1[0] = "Hi! This is the game dev! I released this game for the 39th Ludum Dare.";
 narrator1[1] = "Unfortunately, I've been running out of time and this is just a demo.";
-narrator1[2] = "At least, the theme is respected ;)";
-narrator1[3] = "Anyway, I hoped you liked it! See ya!";
+narrator1[2] = "The whole game is about trying to accept the death (or not) while you run out of your own energy.";
+narrator1[3] = "But if you take too much time, some exterior factors may be implied.";
+narrator1[4] = "Each dream is a step towards death acceptance, and tell a story about the past of the patient.";
+narrator1[5] = "Nightmares that make you step back if you don't face them with enough bravery.";
+narrator1[6] = "And rhythm, of course!";
+narrator1[7] = "Anyway, I hoped you liked it! See ya!";
 </string>
           </argument>
         </arguments>

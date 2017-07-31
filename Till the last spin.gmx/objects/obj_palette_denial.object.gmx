@@ -27,10 +27,10 @@
             <kind>1</kind>
             <string>///init palettes
 
-color[0] = $ecd99a;
-color[1] = $aedd7c;
-color[2] = $56bf39;
-color[3] = $742f73;
+color[0] = $655213; // rgb = 19,82,101
+color[1] = $548322; // rgb = 34,131,84
+color[2] = $5dc640; // rgb = 64,198,93
+color[3] = $d08bcf; // rgb = 207,139,208
 
 color_opposite[0] = $9aadec;
 color_opposite[1] = $ab7cdd;

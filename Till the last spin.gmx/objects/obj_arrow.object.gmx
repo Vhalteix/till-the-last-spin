@@ -60,10 +60,18 @@ rotation = find_arrow_rotation(self);
             <kind>1</kind>
             <string>///destroy the instance if it goes under the room
 if(y &gt; 588){
+    
     if(track &gt; -1 &amp;&amp; track &lt; 4) {
-        arrow_shift(global.lastshake*-1);
-        shaker_create(global.lastshake);
-        global.lastshake *= -1;
+        global.miss++;
+        if(global.miss%3 == 0) {
+            arrow_shift(global.lastshake*-1);
+            shaker_create(global.lastshake);
+            global.lastshake *= -1;
+        }
+        else {
+        s = audio_play_sound(snd_hit,10,false);
+        audio_sound_pitch(s,2.5);
+        }
     }
     instance_destroy();
 }

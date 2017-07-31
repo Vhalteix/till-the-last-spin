@@ -58,6 +58,7 @@
     <instance objName="obj_arrow_outline" x="576" y="480" name="inst_1D3ABC38" locked="0" code="type = vk_left;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_colors" x="512" y="0" name="inst_6DF1ED1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_script" x="0" y="32" name="inst_E9BE56AB" locked="0" code="state = &quot;madam7&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dancer" x="224" y="224" name="inst_8EF1E756" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

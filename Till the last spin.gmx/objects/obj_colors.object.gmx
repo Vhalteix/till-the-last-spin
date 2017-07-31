@@ -81,6 +81,93 @@ draw_set_blend_mode( bm_normal );
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///draw red fog on the screen depending on the miss
+
+/*alpha = 0;
+
+switch(global.miss%3) {
+    case 1 : {
+        alpha = 0.15;
+        break;
+    }
+    case 2 : {
+        alpha = 0.30;
+        break;
+    }
+    case 0 : {
+        if(global.miss != 0) { 
+        alpha = 0.45;
+        } else alpha = 0;
+        break;
+    }
+}
+
+draw_set_alpha(alpha);
+draw_set_color(c_red);
+draw_rectangle(0,0,960,540,false);
+draw_set_alpha(1);*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///draw red cracks on the screen depending on the miss
+
+var index = 0;
+
+switch(global.miss%3) {
+    case 1 : {
+        index = 1;
+        break;
+    }
+    case 2 : {
+        index = 2;
+        break;
+    }
+    case 0 : {
+        if(global.miss != 0) { 
+        index = 3;
+        } else index = 0;
+        break;
+    }
+}
+
+draw_sprite(spr_cracks,index,0,0);
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
   </events>
   <PhysicsObject>0</PhysicsObject>
