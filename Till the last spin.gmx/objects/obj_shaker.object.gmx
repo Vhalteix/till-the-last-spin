@@ -77,7 +77,9 @@ shake_direction = -1;
             <kind>1</kind>
             <string>///shake each 6 frames and destroy itself
 if(shaking) {
-    switch(nb_shake_frames) {
+
+    // disabled for HTML5
+    /*switch(nb_shake_frames) {
         case 0 : {
             window_set_position(window_get_x() + 50*shake_direction,window_get_y());
             break;
@@ -102,7 +104,7 @@ if(shaking) {
             window_set_position(window_get_x() - 1*shake_direction,window_get_y());
             break;
         }
-    }
+    }*/
     nb_shake_frames++;
     if(nb_shake_frames &gt;= max_shake_frames){
         instance_destroy();
