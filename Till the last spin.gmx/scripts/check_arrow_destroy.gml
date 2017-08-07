@@ -4,6 +4,7 @@
 if(instance_exists(obj_arrow)) {
     arrow = instance_nearest(x,y,obj_arrow);
     if(abs(arrow.x-argument0) <= 18 && abs(arrow.y-argument1) <= 18) {
-        with (arrow) instance_destroy();     
+        with (arrow) instance_destroy();
+        global.points += 100;     
     }
 }

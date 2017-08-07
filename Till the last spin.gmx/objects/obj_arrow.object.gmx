@@ -73,6 +73,7 @@ if(y &gt; 588){
         audio_sound_pitch(s,2.5);
         }
     }
+    global.points -= 50;
     instance_destroy();
 }
 
